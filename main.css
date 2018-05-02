@@ -7,7 +7,7 @@ body, html {
 
 body {
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 12px;
   color: #424242;
 }
 
@@ -67,15 +67,12 @@ ul {
 
 .header__title {
   font-weight: 300;
-  font-size: 3.5em;
+  font-size: 4em;
   margin: 0.5em 0.25em;
   display: inline-block;
   color: #212121;
 }
 
-.hero-headline {
-  font-size: 20px;
-}
 
 /*
  *
@@ -143,12 +140,13 @@ main {
  *
  */
 
+ /*changed height to min-height*/
 .hero {
   width: 100%;
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: cover;
-  height: 300px;
+  min-height: 300px;
 }
 
 .hero article {
@@ -157,7 +155,6 @@ main {
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0;
-  height: 50%;
   width: 100%;
   color: #fff;
   padding: 1em;
@@ -170,8 +167,9 @@ main {
  *
  */
 
+ /*changed max-height to min-height*/
 .top-news {
-  max-height: 300px;
+  min-height: 300px;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
   width: 100%;
@@ -187,9 +185,8 @@ main {
 .top-news__item {
   border-bottom: 1px solid #E0E0E0;
   padding: 1em 0;
-  line-height: 16px;
+  line-height: 19.2px;
 }
-/*line-height: 19.2px*/
 
 .top-news__item:before {
   content: "» ";
@@ -216,7 +213,6 @@ main {
  * Sport Scores
  *
  */
-
 
 .scores {
   padding-top: 1em;
@@ -251,9 +247,8 @@ main {
   font-weight: bold;
 }
 
-.scores__table td:nth-child(3),
-.scores__table td:nth-child(6) {
-  text-align: center;
+.scores__table td:nth-child(3) {
+  text-align: right;
 }
 
 .scores__table td:nth-child(2),
@@ -279,7 +274,6 @@ main {
 }
 
 .weather__desc {
-  display: block;
   font-size: 1.2em;
 }
 
@@ -312,7 +306,7 @@ main {
 }
 
 .weather__next__image {
-  width: 50%;
+  width: 100%;
 }
 
 
@@ -354,31 +348,7 @@ main {
   text-decoration: underline;
 }
 
-/*Adding ... Thanks to example on codepen from @natonischuk*/
-.news-text {
-  overflow: hidden;
-  position: relative;
-  line-height: 1.2em;
-  max-height: 2.4em;
-  text-align: justify;
-  margin-right: -1em;
-  padding-right: 1em;
-}
 
-.news-text:before {
-  content: '...';
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.news-text:after {
-  content: '';
-  position: absolute;
-  right: 0;
-  width: 1em;
-  height: 1em;
-}
 /*
  *
  * Footer

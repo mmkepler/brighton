@@ -54,22 +54,6 @@
   }
 }
 
-/*Header was becoming to large to fit in div*/
-@media screen and (max-width: 400px){
-  .header__title {
-    font-size: 1.6em;
-  }
-}
-
-/*footer links were collapsing*/
-@media screen and (max-width: 463px){
-  footer li {
-    padding: 10px;
-    display: block;
-  }
-}
-
-/*Hero overlay news item was not large enough to hold 16px text*/
 @media screen and (min-width: 550px) {
   .hero {
     order: 0;
@@ -81,44 +65,6 @@
   }
 }
 
-/*This takes the location column out so it will fit. It also lets any overflow be hidden*/
-@media screen and (max-width: 550px){
-  .scores {
-    width: 100%;
-    overflow-x: auto;
-    font-size: 14px;
-  }
-  th.scores__location , td.scores__location {
-    display: none;
-  }
-  body {
-    font-size: 14px;
-  }
-  td {
-    text-align: left;
-  }
-}
-
-/*Added this after 16px change*/
-@media screen and (min-width: 400px) and (max-width: 680px){
-  .header__title {
-    font-size: 2em;
-  }
-}
-
-@media screen and (min-width: 550px) and (max-width: 680px) {
-  .header__title {
-    margin-top: 26px;
-  }
-}
-
-/*Helps to deal with the larger font (16px)*/
-@media screen and (min-width: 550px) and (max-width: 750px) {
-  .hero article {
-    height: 60%;
-  }
-}
-
 @media screen and (min-width: 700px) {
   .hero {
     width: 50%;
@@ -127,9 +73,9 @@
     order: 1;
     width: 50%;
   }
-  /*The larger font made it impossible to have the sports scores and weather on a line together*/
   .scores {
     order: 2;
+    width: 60%;
   }
   .weather {
     order: 3;
@@ -143,4 +89,3 @@
     margin-right: auto;
   }
 }
-
